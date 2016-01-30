@@ -5,14 +5,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap-skeleton.css">
-    <title>Bootstrap Skeleton</title>
+        <script src="js/chessboard-0.3.0.js"></script>
+
+    <title>Chess Skeleton</title>
 </head>
 
 <body>
 <div class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a href="" class="navbar-brand">Bootstrap Skeleton</a>
+            <a href="" class="navbar-brand">Chess Skeleton</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -33,8 +35,10 @@
 </div>
 
 <div class="container-fluid">
- 
+    <div id="board" style="width: 400px"></div>
 </div>
+    <script>var board = ChessBoard('board', 'start');</script>
+
 
 </body>
 </html>
