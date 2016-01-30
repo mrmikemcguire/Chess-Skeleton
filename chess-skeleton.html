@@ -4,8 +4,8 @@
     <link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootstrap-skeleton.css">
-        <script src="js/chessboard-0.3.0.js"></script>
+    <link rel="stylesheet" href="css/chessboard-0.3.0.css">
+    <script src="js/chessboard-0.3.0.js"></script>
 
     <title>Chess Skeleton</title>
 </head>
@@ -37,8 +37,14 @@
 <div class="container-fluid">
     <div id="board" style="width: 400px"></div>
 </div>
-    <script>var board = ChessBoard('board', 'start');</script>
-
-
+    
+<script> 
+    var cfg = 
+        {
+        showNotation: false,
+        position: 'start'
+        };
+    var board = ChessBoard('board', cfg) 
+</script>
 </body>
 </html>
